@@ -1,4 +1,3 @@
-mysql -u root -p
 
 use agro_app;
 
@@ -1271,7 +1270,7 @@ INSERT INTO `addresses` (`zipcode`,`region`,`district`,`city`,`oldzipcode`) VALU
  ('0I0610','KAYANZA','MATONGO','GASARE',NULL),
  ('0I0611','KAYANZA','MATONGO','GITWE',NULL),
  ('0I0612','KAYANZA','MATONGO','KABUYE',NULL);
-INSERT INTO `burundizipcodes` (`zipcode`,`region`,`district`,`city`,`oldzipcode`) VALUES 
+INSERT INTO `addresses` (`zipcode`,`region`,`district`,`city`,`oldzipcode`) VALUES 
  ('0I0613','KAYANZA','MATONGO','KIBAVU',NULL),
  ('0I0614','KAYANZA','MATONGO','KIJURI',NULL),
  ('0I0615','KAYANZA','MATONGO','KINYOVU',NULL),
@@ -2608,7 +2607,7 @@ INSERT INTO `burundizipcodes` (`zipcode`,`region`,`district`,`city`,`oldzipcode`
  ('0Q0109','RUTANA','BUKEMBA','RURANGA',NULL),
  ('0Q0110','RUTANA','BUKEMBA','SOSUMO',NULL),
  ('0Q0200','RUTANA','GIHARO','GIHARO','BI.RT.GH');
-INSERT INTO `burundizipcodes` (`zipcode`,`region`,`district`,`city`,`oldzipcode`) VALUES 
+INSERT INTO `addresses` (`zipcode`,`region`,`district`,`city`,`oldzipcode`) VALUES 
  ('0Q0201','RUTANA','GIHARO','BUGIGA',NULL),
  ('0Q0202','RUTANA','GIHARO','BUKEMBA',NULL),
  ('0Q0203','RUTANA','GIHARO','BUTARE',NULL),

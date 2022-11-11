@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('address')->nullable();
             $table->date('date_naissance')->nullable();
             $table->integer('address_id')->nullable();
-            $table->enum('role', [])->nullable();
+            $table->enum('role', ["ADMNISTRATEUR","CLIENT", "AGENT"])->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');

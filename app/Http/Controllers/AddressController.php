@@ -15,7 +15,8 @@ class AddressController extends Controller
      */
     public function index()
     {
-        //
+
+        return view('layouts/base');
     }
 
     /**
