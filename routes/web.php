@@ -25,3 +25,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get("address", [AddressController::class, 'index'])->name('address');
 Route::resource("users", UserController::class);
+
+Route::resource('category', App\Http\Controllers\CategoryController::class)->only('index', 'store');
+
+Route::resource('product', App\Http\Controllers\ProductController::class)->only('index', 'store');
