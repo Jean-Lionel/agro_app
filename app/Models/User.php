@@ -55,4 +55,15 @@ class User extends Authenticatable
             $model->name = $model->nom . " ".  $model->prenom;
         });
     }
+
+    // Getting user role
+    public function isAdmin(){
+        return $this->role == 'ADMNISTRATEUR';
+    } 
+    public function isClient(){
+        return $this->role == 'CLIENT';
+    }   
+    public function isAgent(){
+        return $this->role == 'AGENT';
+    }
 }
