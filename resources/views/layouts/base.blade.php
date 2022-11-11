@@ -184,7 +184,7 @@
 								<a href="appointment-list.html"><i class="fe fe-layout"></i> <span>Appointments</span></a>
 							</li>
 							<li> 
-								<a href="specialities.html"><i class="fe fe-users"></i> <span>Specialities</span></a>
+								<a href="{{ route('users.index') }}"><i class="fe fe-users"></i> <span>Specialities</span></a>
 							</li>
 							<li> 
 								<a href="doctor-list.html"><i class="fe fe-user-plus"></i> <span>Doctors</span></a>
@@ -299,18 +299,18 @@
         <script src="{{ asset('assets/js/jquery-3.2.1.min.js') }}"></script>
 		
 		<!-- Bootstrap Core JS -->
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="{{ asset('assets/js/popper.min.js') }}"></script>
+        <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
 		
 		<!-- Slimscroll JS -->
-        <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="{{ asset('assets/plugins/slimscroll/jquery.slimscroll.min.js') }}"></script>
 		
-		<script src="assets/plugins/raphael/raphael.min.js"></script>    
-		<script src="assets/plugins/morris/morris.min.js"></script>  
-		<script src="assets/js/chart.morris.js"></script>
+		<script src="{{asset('assets/plugins/raphael/raphael.min.js') }}"></script>    
+		<script src="{{ asset('assets/plugins/morris/morris.min.js') }}"></script>  
+		<script src="{{ asset('assets/js/chart.morris.js') }}"></script>
 		
 		<!-- Custom JS -->
-		<script  src="assets/js/script.js"></script>
+		<script  src="{{  asset('assets/js/script.js') }}"></script>
 		
     </body>
 
