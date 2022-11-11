@@ -1,0 +1,5 @@
+models:
+  Agent:
+    nom : string:250
+    nom : string:250
+    addresse : string:250
