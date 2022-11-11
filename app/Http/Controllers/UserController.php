@@ -26,7 +26,8 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        $roles = ["ADMNISTRATEUR","CLIENT", "AGENT"];
+        return view('users.create', compact('roles'));
     }
 
     /**
