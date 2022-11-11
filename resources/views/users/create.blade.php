@@ -48,7 +48,14 @@
 							<div class="col-12 col-sm-6">
 								<div class="form-group">
 									<label>Role</label>
-									<input type="text" name="role" value="{{ old('role') }}" class="form-control">
+									<select name="role" id="role" class="form-control">
+										<option value=""></option>
+										@foreach ($roles as $role)
+										   <option value="{{$role}}">{{$role}}</option>
+										@endforeach
+									</select>
+
+									
 									@error('role')
 									<span class="text-danger">{{$message }}</span>
 									@enderror

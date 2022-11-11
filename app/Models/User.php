@@ -26,7 +26,8 @@ class User extends Authenticatable
         "prenom",
         "address",
         "role",
-        "date_naissance"
+        "date_naissance",
+        'password',
     ];
 
     /**
@@ -35,7 +36,7 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $hidden = [
-        'password',
+        
         'remember_token',
     ];
 
@@ -47,4 +48,11 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public static function boot(){
+        parent::boot();
+        self::creating(function($model){
+            $model->name = $model->nom . " ".  $model->prenom;
+        });
+    }
 }
